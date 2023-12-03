@@ -1,0 +1,34 @@
+{
+   "intents": [
+       {
+           "tag": "chao_hoi",
+           "patterns": ["Xin chào", "Chào bạn", "Chào tôi", "Chào"],
+           "responses": ["Xin chào!", "Chào bạn!", "Rất vui được gặp bạn!"]
+       },
+       {
+           "tag": "tam_biet",
+           "patterns": ["Tạm biệt", "Hẹn gặp lại", "Chúc bạn một ngày tốt lành"],
+           "responses": ["Tạm biệt!", "Hẹn gặp lại!", "Chúc bạn một ngày tốt lành!"]
+       },
+       {
+           "tag": "cam_on",
+           "patterns": ["Cảm ơn", "Cảm ơn bạn", "Cảm ơn rất nhiều"],
+           "responses": ["Rất vui được giúp bạn!", "Không có gì!", "Rất vui được phục vụ!"]
+       },
+       {
+           "tag": "xin_loi",
+           "patterns": ["Xin lỗi", "Xin lỗi bạn", "Tôi xin lỗi"],
+           "responses": ["Không sao cả!", "Đừng lo lắng!", "Không có gì, đừng lo!"]
+       },
+       {
+           "tag": "hoi_thoi_gian",
+           "patterns": ["Mấy giờ rồi", "Bây giờ là mấy giờ", "Giờ này là mấy giờ"],
+           "responses": ["Xin lỗi, tôi không thể cung cấp thông tin về thời gian thực."]
+       },
+       {
+           "tag": "hoi_thoi_tiet",
+           "patterns": ["Thời tiết như thế nào", "Hôm nay trời thế nào", "Ngày mai trời thế nào"],
+           "responses": ["Xin lỗi, tôi không thể cung cấp thông tin về thời tiết."]
+       }
+   ]
+}
