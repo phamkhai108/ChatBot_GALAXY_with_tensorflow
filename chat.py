@@ -9,6 +9,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from data_preparation import prepare_data
 from model import create_model
+from tom_tat import tom_tat_van_ban
 
 stemmer = LancasterStemmer()
 
@@ -48,6 +49,11 @@ def chat():
             if tg['tag'] == tag:
                 responses = tg['responses']
 
-        print(random.choice(responses))
-
+        if tag == "tom_tat":
+            print(random.choice(responses))
+            contents = [input("You: ")]
+            summary = tom_tat_van_ban(contents)  # Sử dụng hàm tóm tắt văn bản của bạn ở đây
+            print(summary)
+        else:
+            print(random.choice(responses))
 chat()
