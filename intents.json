@@ -6,24 +6,33 @@
                 "Xin chào",
                 "Chào bạn",
                 "Chào tôi",
-                "Chào"
+                "Hi",
+                "Chào",
+                "Hello"
             ],
             "responses": [
                 "Xin chào!",
                 "Chào bạn!",
-                "Rất vui được gặp bạn!"
+                "Rất vui được gặp bạn!",
+                "Bạn cần tôi giúp gì không!",
+                "Hello!",
+                "Hello! Bạn cần giúp gì?"
+                
             ]
         },
         {
             "tag": "tam_biet",
             "patterns": [
                 "Tạm biệt",
+                "Tôi bận rồi",
                 "Hẹn gặp lại",
                 "Chúc bạn một ngày tốt lành"
             ],
             "responses": [
                 "Tạm biệt!",
                 "Hẹn gặp lại!",
+                "Goodbye",
+                "Thật chán khi không có ai để nói chuyện! hẹn bạn lần sau",
                 "Chúc bạn một ngày tốt lành!"
             ]
         },
@@ -31,6 +40,8 @@
             "tag": "cam_on",
             "patterns": [
                 "Cảm ơn",
+                "thank you",
+                "thanks",
                 "Cảm ơn bạn",
                 "Cảm ơn rất nhiều"
             ],
@@ -44,6 +55,7 @@
             "tag": "xin_loi",
             "patterns": [
                 "Xin lỗi",
+                "Sorry",
                 "Xin lỗi bạn",
                 "Tôi xin lỗi"
             ],
@@ -69,7 +81,8 @@
             "patterns": [
                 "Thời tiết như thế nào",
                 "Hôm nay trời thế nào",
-                "Ngày mai trời thế nào"
+                "Ngày mai trời thế nào",
+                "Thời tiết"
             ],
             "responses": [
                 "Xin lỗi, tôi không thể cung cấp thông tin về thời tiết."
@@ -78,13 +91,40 @@
         {
             "tag": "tom_tat",
             "patterns": [
-                "Tôi cần tóm tắt văn bản",
+                "giúp tôi tóm tắt",
+                "Tôi cần tóm tắt",
+                "Tóm tắt",
                 "Tóm tắt văn bản cho tôi",
                 "Bạn có thể tóm tắt văn bản này không?"
             ],
             "responses": [
-                "Bạn cần tóm tắt văn bản gì?",
-                "Hãy nêu văn bản của bạn vào đây."
+                "Bạn cần tóm tắt văn bản phải không? Hãy đưa nó vào đây, tôi sẽ giúp bạn tóm tắt 😘",
+                "Hãy nêu văn bản của bạn vào đây.",
+                "Tóm tắt văn bản ư! đưa nó vào đây 😒"
+            ]
+        },
+        {
+            "tag": "tom",
+            "patterns": [
+                "Tom",
+                "Tôi cần",
+                "Tôi muốn",
+                "giúp tôi"
+            ],
+            "responses": [
+                "aaaaaaaaaaaaaaaaaaa",
+                "bbbbbbbbbbbbbb",
+                "cccccccccccccccccc"
+            ]
+        },
+        {
+            "tag": "phan_loai_cau",
+            "patterns": [
+                "Phân loại văn bản",
+                "Phân loại câu"
+            ],
+            "responses": [
+                "adsfghj"
             ]
         }
     ]

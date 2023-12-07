@@ -5,14 +5,14 @@ import nltk
 from sklearn.metrics import pairwise_distances_argmin_min
 from sklearn.cluster import KMeans
 
-# Đoạn văn cần tóm tắt
+# Định nghĩa hàm tóm tắt văn bản
 def tom_tat_van_ban(contents):
     # Tiền xử lý và tách câu
     contents_parsed = [content.lower().strip() for content in contents]
     sentences = nltk.sent_tokenize(contents_parsed[0])
-    #đêm só câu trong văn bản. Mỗi câu kết thức bỏi dấu .
-    # a = len(sentences)
-    # print('số câu',a)
+    # Đếm số câu trong văn bản
+    a = len(sentences)
+
     # Sử dụng NER để lấy từ được gắn nhãn
     word_labels = []
     for sentence in sentences:
@@ -32,23 +32,23 @@ def tom_tat_van_ban(contents):
                 sentence_vec[idx] = 1  # Đánh dấu 1 nếu từ có trong câu
         X.append(sentence_vec)
 
+    # Tính số cụm cho K-means
     n_clusters = int(a * (35/100))
     if n_clusters >= (a - 1):
         return 'không thể tóm tắt. Yêu cầu câu tóm tắt vượt quá số câu trong văn bản nhập vào!'
     else:
+        # Áp dụng K-means
         kmeans = KMeans(n_clusters=n_clusters)
         kmeans = kmeans.fit(X)
 
+        # Tính trung bình cho mỗi cụm
         avg = []
         for j in range(n_clusters):
             idx = np.where(kmeans.labels_ == j)[0]
             avg.append(np.mean(idx))
 
+        # Tìm câu gần nhất với trung tâm của mỗi cụm
         closest, _ = pairwise_distances_argmin_min(kmeans.cluster_centers_, X)
         ordering = sorted(range(n_clusters), key=lambda k: avg[k])
         summary = ' '.join([sentences[closest[idx]] for idx in ordering])
         return summary
-        # print(summary)
-
-# tom_tat_van_ban(contents)
-
