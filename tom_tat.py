@@ -6,12 +6,12 @@ from sklearn.metrics import pairwise_distances_argmin_min
 from sklearn.cluster import KMeans
 
 # Định nghĩa hàm tóm tắt văn bản
-def tom_tat_van_ban(contents):
+def tom_tat_van_ban(content):
     # Tiền xử lý và tách câu
-    contents_parsed = [content.lower().strip() for content in contents]
-    sentences = nltk.sent_tokenize(contents_parsed[0])
+    content_parsed = content.lower().strip()
+    sentences = sent_tokenize(content_parsed)
     # Đếm số câu trong văn bản
-    a = len(sentences)
+    num_sent = len(sentences)
 
     # Sử dụng NER để lấy từ được gắn nhãn
     word_labels = []
@@ -33,9 +33,9 @@ def tom_tat_van_ban(contents):
         X.append(sentence_vec)
 
     # Tính số cụm cho K-means
-    n_clusters = int(a * (35/100))
-    if n_clusters >= (a - 1):
-        return 'không thể tóm tắt. Yêu cầu câu tóm tắt vượt quá số câu trong văn bản nhập vào!'
+    n_clusters = int(num_sent * (35/100))
+    if n_clusters >= (num_sent - 1):
+        return 'Văn bản quá ngắn! nhập văn bản dài hơn tôi sẽ tóm tắt giúp bạn'
     else:
         # Áp dụng K-means
         kmeans = KMeans(n_clusters=n_clusters)

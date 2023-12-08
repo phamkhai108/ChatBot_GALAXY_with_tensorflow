@@ -104,17 +104,18 @@
             ]
         },
         {
-            "tag": "tom",
+            "tag": "help",
             "patterns": [
-                "Tom",
+                "Muốn",
+                "cần",
                 "Tôi cần",
                 "Tôi muốn",
                 "giúp tôi"
             ],
             "responses": [
-                "aaaaaaaaaaaaaaaaaaa",
-                "bbbbbbbbbbbbbb",
-                "cccccccccccccccccc"
+                "Bạn cần giúp gì?",
+                "Tôi giúp gì được cho bạn?",
+                "Bạn muốn giúp gì?"
             ]
         },
         {
