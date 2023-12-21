@@ -3,12 +3,12 @@
         {
             "tag": "chao_hoi",
             "patterns": [
-                "Xin chào",
-                "Chào bạn",
-                "Chào tôi",
+                "xin chao",
+                "chao ban",
+                "chao toi",
                 "Hi",
-                "Chào",
-                "Hello"
+                "chao",
+                "hello"
             ],
             "responses": [
                 "Xin chào!",
@@ -17,115 +17,167 @@
                 "Bạn cần tôi giúp gì không!",
                 "Hello!",
                 "Hello! Bạn cần giúp gì?"
-                
             ]
         },
         {
             "tag": "tam_biet",
             "patterns": [
-                "Tạm biệt",
-                "Tôi bận rồi",
-                "Hẹn gặp lại",
-                "Chúc bạn một ngày tốt lành"
+
+                "bye",
+                "goodbye",
+                "tam biet",
+                "toi ban roi",
+                "hen gap lai",
+                "chuc mot ngay tot lanh"
             ],
             "responses": [
                 "Tạm biệt!",
                 "Hẹn gặp lại!",
                 "Goodbye",
-                "Thật chán khi không có ai để nói chuyện! hẹn bạn lần sau",
-                "Chúc bạn một ngày tốt lành!"
+                "Hẹn bạn lần sau",
+                "Chúc bạn một ngày tốt lành!",
+                "Chào tạm biệt! Nếu bạn có thêm câu hỏi trong tương lai hoặc cần sự trợ giúp, đừng ngần ngại quay lại. Chúc bạn một ngày tốt lành!",
+                "Hẹn gặp lại! Nếu bạn có bất kỳ câu hỏi hoặc cần giúp đỡ, đừng ngần ngại quay lại. Chúc bạn một ngày tốt lành!"
             ]
         },
         {
             "tag": "cam_on",
             "patterns": [
-                "Cảm ơn",
+                "cam on",
                 "thank you",
                 "thanks",
-                "Cảm ơn bạn",
-                "Cảm ơn rất nhiều"
+                "cam on ban",
+                "cam on ban"
             ],
             "responses": [
-                "Rất vui được giúp bạn!",
-                "Không có gì!",
-                "Rất vui được phục vụ!"
+                "Rất vui được giúp đỡ! Nếu bạn có thêm bất kỳ câu hỏi hoặc cần sự giúp đỡ khác, đừng ngần ngại hỏi. Chúc bạn một ngày tốt lành!",
+                "Không có gì, bạn rất hoan nghênh! Nếu bạn có thêm câu hỏi hoặc cần thêm sự giúp đỡ trong tương lai, đừng ngần ngại liên hệ. Chúc bạn một ngày tốt lành!",
+                "Không có gì, Chúc bạn một ngày tốt lành!"
             ]
         },
         {
             "tag": "xin_loi",
             "patterns": [
-                "Xin lỗi",
-                "Sorry",
-                "Xin lỗi bạn",
-                "Tôi xin lỗi"
+                "xin loi",
+                "sorry",
+                "xin loi ban",
+                "toi xin loi"
             ],
             "responses": [
-                "Không sao cả!",
-                "Đừng lo lắng!",
-                "Không có gì, đừng lo!"
+                "không sao cả!",
+                "đừng lo lắng!",
+                "không có gì, đừng lo!",
+                "không có vấn đề gì cả! Nếu bạn có thêm câu hỏi hoặc cần sự giúp đỡ, hãy thoải mái hỏi. Tôi ở đây để giúp đỡ!",
+                "không cần xin lỗi! Nếu bạn có bất kỳ câu hỏi hoặc cần hỗ trợ nào khác, đừng ngần ngại liên hệ. Tôi ở đây để giúp đỡ!"
             ]
         },
         {
             "tag": "hoi_thoi_gian",
             "patterns": [
-                "Mấy giờ rồi",
-                "Bây giờ là mấy giờ",
-                "Giờ này là mấy giờ"
+                "may gio",
+                "may gio roi",
+                "bay gio la may gio",
+                "gio nay la may gio"
             ],
             "responses": [
-                "Xin lỗi, tôi không thể cung cấp thông tin về thời gian thực."
+                "Xin lỗi, tôi không thể cung cấp thông tin về thời gian thực.",
+                "Xin lỗi, nhưng tôi không thể cung cấp thông tin về thời gian thực hiện tại vì tôi không có khả năng truy cập vào dữ liệu thời gian thực. Bạn có thể kiểm tra giờ trên thiết bị của mình hoặc sử dụng dịch vụ trực tuyến để biết giờ hiện tại.",
+                "Xin lỗi. Tôi không có khả năng cung cấp thông tin về thời gian thực. Hãy kiểm tra đồng hồ trên thiết bị của bạn để biết giờ hiện tại."
             ]
         },
         {
-            "tag": "hoi_thoi_tiet",
+            "tag": "thoi_tiet_nay",
             "patterns": [
-                "Thời tiết như thế nào",
-                "Hôm nay trời thế nào",
-                "Ngày mai trời thế nào",
-                "Thời tiết"
+                "troi hom nay the nao",
+                "thoi tiet hom nay",
+                "thoi tiet nay",
+                "thoi tiet"
             ],
             "responses": [
-                "Xin lỗi, tôi không thể cung cấp thông tin về thời tiết."
+                "Xin lỗi, tôi không thể cung cấp thông tin về thời tiết.",
+                "Rất tiếc, nhưng tôi không thể cung cấp thông tin về thời tiết cụ thể vì không có khả năng truy cập vào dữ liệu thời tiết thực tế. Để biết thông tin về thời tiết, bạn có thể sử dụng các dịch vụ trực tuyến như trang web thời tiết hoặc ứng dụng di động, hoặc bạn cũng có thể kiểm tra với các nguồn tin tức địa phương."
+            ]
+        },
+        {
+            "tag": "thoi_tiet_mai",
+            "patterns": [
+                "troi ngay mai the nao",
+                "thoi tiet ngay mai",
+                "ngay mai troi the nao",
+                "thoi tiet hom sau"
+            ],
+            "responses": [
+                "Ngày mai trời nắng ấm, gió nhẹ, rất thích hợp để bạn đi dạo hoặc đi hẹn hò",
+                "Ngày mai không khí trong lành, trời ít mấy có gió nhẹ và nhiệt độ trung bình. Về đêm sẽ hơi se lạnh. Nếu bạn đi chơi về muộn hãy nhớ mang theo chiếc áo khoác nhẹ nhé!"
             ]
         },
         {
             "tag": "tom_tat",
             "patterns": [
-                "giúp tôi tóm tắt",
-                "Tôi cần tóm tắt",
-                "Tóm tắt",
-                "Tóm tắt văn bản cho tôi",
-                "Bạn có thể tóm tắt văn bản này không?"
+                "giup toi tom tat",
+                "toi can tom tat",
+                "toi can tom tat van ban",
+                "tom tat",
+                "tom tat van ban cho toi",
+                "ban co the tom tat van ban nay khong"
             ],
             "responses": [
-                "Bạn cần tóm tắt văn bản phải không? Hãy đưa nó vào đây, tôi sẽ giúp bạn tóm tắt 😘",
+                "Bạn cần tóm tắt văn bản phải không? Hãy đưa nó vào đây.",
                 "Hãy nêu văn bản của bạn vào đây.",
-                "Tóm tắt văn bản ư! đưa nó vào đây 😒"
+                "Nhập văn bản của bạn, tôi sẽ giúp bạn tóm tắt."
             ]
         },
         {
             "tag": "help",
             "patterns": [
-                "Muốn",
-                "cần",
-                "Tôi cần",
-                "Tôi muốn",
-                "giúp tôi"
+                "troi hom",
+                "nay the nao",
+                "muon",
+                "can",
+                "toi can",
+                "toi muon",
+                "giup toi"
             ],
             "responses": [
                 "Bạn cần giúp gì?",
                 "Tôi giúp gì được cho bạn?",
-                "Bạn muốn giúp gì?"
+                "Bạn có điều gì cần tôi giúp"
             ]
         },
         {
             "tag": "phan_loai_cau",
             "patterns": [
-                "Phân loại văn bản",
-                "Phân loại câu"
+                "phan loai van ban",
+                "phan loai cau"
             ],
             "responses": [
-                "adsfghj"
+                "n",
+                "a",
+                "v"
+            ]
+        },
+        {
+            "tag": "tong_2so_python",
+            "patterns": [
+                "viet doan ma tinh tong 2 so nguyen python",
+                "tinh tong 2 so nguyen bang python",
+                "python tong 2 so nguyen",
+                "ma python tong 2 so"
+            ],
+            "responses": [
+                "sau đây là đoạn mã tính tổng 2 số nguyên bằng python\nso1 = int(input('Nhập số nguyên thứ nhất: '))\nso2 = int(input('Nhập số nguyên thứ hai: '))\ntong = so1 + so2\nprint(f'Tổng của {so1} và {so2} là: {tong}')",
+                "sau đây là đoạn mã tính tổng 2 số nguyên bằng python\n\tso1 = int(input('Nhập số nguyên A: '))\n\tso2 = int(input('Nhập số nguyên B: '))\n\ttong = so1 + so2\n\tprint(f'Tổng của {so1} và {so2} là: {tong}')"
+            ]
+        },
+        {
+            "tag": "khong_hieu",
+            "patterns": [
+                
+            ],
+            "responses": [
+                "Tôi không hiểu! Bạn có thể nói rõ hơn không.",
+                "Xin lỗi! Tôi chỉ là một chatbot đơn giản, thông tin bạn muốn cố thể tôi chưa được cập nhật.",
+                "Tôi không thể trả lời yêu cầu của bạn, hãy đặt câu hỏi hoặc yêu cầu khác tôi sẽ giúp bạn."
             ]
         }
     ]

@@ -1,18 +1,13 @@
-# Hàm chat với bot
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 import numpy as np
 import random
 import json
-import pickle
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
-from data_preparation import prepare_data
+import unidecode 
 from model import create_model
+from data_preparation import prepare_data
 from tom_tat import tom_tat_van_ban
-#sử dùng hàm 
 from acronym.stand_words import normalize_text, dictions
-
 # Khởi tạo stemmer
 stemmer = LancasterStemmer()
 
@@ -24,57 +19,71 @@ model = create_model()
 with open("intents.json") as file:
     data = json.load(file)
 
-def bag_of_words(s, words):
-    # Khởi tạo bag of words với số lượng từ bằng số lượng words
-    bag = [0 for _ in range(len(words))]
+# Biến toàn cục để kiểm tra xem có đang chờ tóm tắt văn bản không
+waiting_for_summary = False
 
-    # Tách câu thành các từ và stem các từ
+# Biến toàn cục để lưu trữ lịch sử chat
+chat_history = ["", ""]
+
+# Hàm tạo túi từ (bag of words)
+def bag_of_words(s, words):
+    bag = [0 for _ in range(len(words))]
     s_words = nltk.word_tokenize(s)
     s_words = [stemmer.stem(word.lower()) for word in s_words]
-
-    # Nếu từ có trong câu, đánh dấu 1 trong bag of words
     for se in s_words:
         for i, w in enumerate(words):
             if w == se:
                 bag[i] = 1
-            
-    # Trả về bag of words dưới dạng numpy array
     return np.array(bag)
 
-def chat():
-    # In ra thông báo bắt đầu chat
-    print("Bắt đầu chat với bot! (chat 'quit' để dừng chatbot)")
-    chat_history = ["", ""]
-    while True:
-        # Nhận input từ người dùng, sử dụng hàm normalize_text để giải mã chữ viết tắt
-        inp = normalize_text(input("You: "),dictions)
-        # print(inp)
-        # Nếu người dùng nhập "quit", kết thúc vòng lặp
-        if inp.lower() == "quit":
-            break
-        #cập nhật lịch sử cho câu chat
-        chat_history.append(inp)
-        if len(chat_history) > 2:
-            chat_history.pop(0)
-        # Tạo một chuỗi từ lịch sử chat
-        chat = " ".join(chat_history)
-        # Dự đoán tag của câu người dùng nhập
-        results = model.predict(np.array([bag_of_words(chat, words)]))
-        results_index = np.argmax(results)
-        tag = labels[results_index]
+# Hàm chat với bot
+def chat(user_input):
+    global waiting_for_summary
+    global chat_history
+    if waiting_for_summary:
+        summary = tom_tat_van_ban(user_input)
+        waiting_for_summary = False
+        return summary
 
-        # Tìm phản hồi tương ứng với tag
+    # Cập nhật lịch sử chat
+    chat_history.append(user_input)
+    if len(chat_history) > 2:
+        chat_history.pop(0)
+    # Tạo một chuỗi từ lịch sử chat
+    inp = " ".join(chat_history)
+    inp = normalize_text(inp, dictions)
+    inp = unidecode.unidecode(inp)
+    results = model.predict(np.array([bag_of_words(inp, words)]))
+    results_index = np.argmax(results)
+    tag = labels[results_index]
+    for tg in data["intents"]:
+        if tg['tag'] == tag:
+            responses = tg['responses']
+    if tag == "tom_tat":
+        bot_response = random.choice(responses)
+        waiting_for_summary = True
+        return bot_response
+    #kiểm tra chỉ só dự đoán bé hơn 50% thì in ra 
+    elif results[0, results_index] < 0.7: 
         for tg in data["intents"]:
-            if tg['tag'] == tag:
+            if tg['tag'] == "khong_hieu":
                 responses = tg['responses']
-        # Nếu tag là "tom_tat", yêu cầu người dùng nhập đoạn văn cần tóm tắt
-        if tag == "tom_tat":
-            print(random.choice(responses))
-            content = input("You: ")
-            summary = tom_tat_van_ban(content)
-            print(chat)
-            print(summary)
-        else:
-            print(chat)
-            print(random.choice(responses))
-chat()
+        bot_response = random.choice(responses)
+        return bot_response
+    else: 
+        bot_response = random.choice(responses)
+        return bot_response # inp
+
+
+
+# print("Bắt đầu chat với bot! (chat 'quit' để dừng chatbot)")
+# while True:
+#     user_input = input("you: ")
+#     if user_input.lower() == 'quit':
+#         break
+#     # print("you: ", user_input)
+#     # if inp.lower() == "quit:": break
+#     bot_response = chat(user_input)
+#     #in ra đoạn chat trong 2 lượt mới nhất 
+#     # print(a)
+#     print("bot:",bot_response)

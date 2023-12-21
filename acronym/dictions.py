@@ -77,6 +77,7 @@ dictions = {
     "v/v": "về việc",
     "vv": "vân vân",
     "lm": "làm",
+    "Lm": "làm",
     "tr": "trang",
     "khg": "không",
     "khĝ": "không",
