@@ -14,3 +14,7 @@ xử lý các từ viết tắt trong tiếng việt. vd: 'dz' = 'đẹp trai'
 
 *****hướng dẫn sử dụng: tải project về và cài những thư viện cần thiết rồi chạy file giao_dien.py
 
+* ChatBot "GALAXY" version 2.1 ra mắt (22/12/2023)
+- Tính năng bổ sung: + vá một số lỗi trong Chatbot
+                     + thêm dữ liệu cho đoạn chat
+                     + Tổ chức lại file dữ liệu của bot vào thư mục "stories"
