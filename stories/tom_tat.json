@@ -1,0 +1,34 @@
+{
+    "intents": [
+        {
+            "tag": "tom_tat",
+            "patterns": [
+                "giup toi tom tat",
+                "toi can tom tat",
+                "toi can tom tat van ban",
+                "tom tat",
+                "tom tat van ban cho toi",
+                "ban co the tom tat van ban nay khong"
+            ],
+            "responses": [
+                "Bạn cần tóm tắt văn bản phải không? Hãy đưa nó vào đây.",
+                "Hãy nêu văn bản của bạn vào đây.",
+                "Nhập văn bản của bạn, tôi sẽ giúp bạn tóm tắt."
+            ]
+        },
+        {
+            "tag": "tom_tat_sau",
+            "patterns": [
+                "ban da tom tat chua vay",
+                "van ban tom tat day u",
+                "tom tat chua",
+                "tom tat van ban toi da nhap di"
+            ],
+            "responses": [
+                "Tôi đã tóm tắt văn bản bạn đưa ra, bạn có thể lướt lại để xem",
+                "Văn bản tôi đã tóm tắt phía trên rồi! Nếu cần thêm thông tin gì hãy liên hệ với tôi",
+                "Văn bản của bạn đã được tóm tắt."
+            ]
+        }
+    ]
+}

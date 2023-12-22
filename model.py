@@ -3,10 +3,10 @@ import numpy as np
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 import pickle
-from data_preparation import prepare_data
+from data_preparation import prepare_data, file_names_list
 
 # Chuẩn bị dữ liệu
-words, labels, training, output = prepare_data()
+words, labels, training, output = prepare_data(file_names_list)
 
 def create_model():
     # Khởi tạo mô hình Sequential
@@ -26,7 +26,7 @@ def create_model():
         model.load_weights("model.h5")
     except:
         # Nếu file model.tflearn không tồn tại, huấn luyện mô hình với dữ liệu training và output
-        model.fit(training, output, epochs=10000, batch_size=8)
+        model.fit(training, output, epochs=2000, batch_size=8)
         # Lưu trọng số của mô hình vào file model.tflearn
         model.save_weights("model.h5")
     

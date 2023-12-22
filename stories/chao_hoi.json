@@ -1,0 +1,54 @@
+{
+    "intents": [
+        {
+            "tag": "gioi_thieu_ten",
+            "patterns": [
+                "toi ten la",
+                "ten toi la",
+                "chao toi di",
+                "ban la ai",
+                "ban la gi",
+                "ban gioi thieu ve minh di"
+            ],
+            "responses": [
+                "Xin chào! Tôi là chatbot GALAXY tôi có thể giúp gì cho bạn.",
+                "Xin chào! tôi là chatbot. Bạn cần tôi cung cấp thông tin gì."
+            ]
+        },
+        {
+            "tag": "chao_hoi",
+            "patterns": [
+                "hello",
+                "xin chao",
+                "rat chao ban",
+                "hi bot",
+                "chao bot",
+                "xin chao galaxy",
+                "hello galaxy",
+                "hi galaxy",
+                "chao"
+            ],
+            "responses": [
+                "Chào bạn! Tôi là chatbot GALAXY tôi có thể giúp gì cho bạn.",
+                "Hi! tôi là chatbot. Bạn cần tôi cung cấp thông tin gì.",
+                "Xin Chào!",
+                "Chào bạn! Bạn cần tôi giúp gì không."
+            ]
+        },
+        {
+            "tag": "chao_hoi",
+            "patterns": [
+                "ban co the chao lai khong",
+                "chao lai",
+                "tiep tuc chao",
+                "chao toi di"
+            ],
+            "responses": [
+                "Chào bạn! Tôi là chatbot GALAXY tôi có thể giúp gì cho bạn.",
+                "Hi! tôi là chatbot. Bạn cần tôi cung cấp thông tin gì.",
+                "Xin Chào!",
+                "Chào bạn! Bạn cần tôi giúp gì không."
+            ]
+        }
+    ]
+}

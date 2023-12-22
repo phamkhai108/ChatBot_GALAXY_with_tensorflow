@@ -1,0 +1,30 @@
+{
+    "intents": [
+        {
+            "tag": "khong_hieu",
+            "patterns": [
+            ],
+            "responses": [
+                "Xin lỗi! Tôi không hiểu bạn cần thông tin gì. Hãy cung cấp thông tin rõ hơn tôi sẽ giúp bạn.",
+                "Xin lỗi! Tôi không hiểu. Bạn có thể nói rõ hơn không",
+                "Xin lỗi! Tôi không hiểu. Bạn có thể nhập lại với nguồn thông tin đầy đủ hơn không",
+                "Xin lỗi! Tôi là chat bot GALAXY được xây dựng trên mô hình AI được phát triển bởi 'VITIMINA', có thể thông tin của bạn bạn cần khá mới nên có thể tôi chưa được cập nhật.",
+                "Xin lỗi! Dữ liệu của tôi được cập nhật đến ngày 24/12/2023, có thể thông tin của bạn cần quá mới nên tôi chưa thể cung cấp.",
+                "Dường như câu hỏi của bạn không rõ ràng hoặc có thể là một phần của một câu chuyện lớn hơn. Nếu bạn có thêm thông tin hoặc câu hỏi cụ thể, hãy cung cấp thêm thông tin để tôi có thể hỗ trợ bạn một cách chính xác hơn."
+            ]
+        },
+        {
+            "tag": "khong_hieu_1",
+            "patterns": [
+                "ban noi khong hieu ma duoc a",
+                "ngu",
+                "toi da noi rat ro roi"
+            ],
+            "responses": [
+                "Xin lỗi! Tôi là chat bot GALAXY được xây dựng trên mô hình AI được phát triển bởi 'VITIMINA', có thể thông tin của bạn bạn cần khá mới nên có thể tôi chưa được cập nhật.",
+                "Xin lỗi! Dữ liệu của tôi được cập nhật đến ngày 24/12/2023, có thể thông tin của bạn cần quá mới nên tôi chưa thể cung cấp.",
+                "Dường như câu hỏi của bạn không rõ ràng hoặc có thể là một phần của một câu chuyện lớn hơn. Nếu bạn có thêm thông tin hoặc câu hỏi cụ thể, hãy cung cấp thêm thông tin để tôi có thể hỗ trợ bạn một cách chính xác hơn."
+            ]
+        }
+    ]
+}

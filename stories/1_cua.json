@@ -1,0 +1,37 @@
+{
+    "intents": [
+        {
+            "tag": "thong_tin_chung",
+            "patterns": [
+                "bo phan 1 cua humg",
+                "bo phan 1 cua mo dia chat",
+                "bo phan 1 cua Dai hoc Mo Dia Chat",
+                "thong tin ve bo phan mot cua humg",
+                "thong tin ve bo phan mot cua truong dai hoc mo dia chat",
+                "thong tin bo phan mot cua mo dia chat",
+                "bo phan mot cua dai hoc mo dia chat",
+                "bo phan mot cua mo dia chat",
+                "bo phan mot cua dai hoc mo dia chat"
+            ],
+            "responses": [
+                "Bộ phận một cửa HUMG (tiếng Anh: One-stop service department of HUMG) là đơn vị thuộc Phòng Tổ chức - Cán bộ, Trường Đại học Mỏ - Địa chất, có chức năng tiếp nhận, xử lý và trả kết quả các thủ tục hành chính của các tổ chức, cá nhân trong và ngoài trường.\nBộ phận một cửa HUMG được thành lập theo Quyết định số 190/QĐ-ĐHMĐC ngày 26 tháng 9 năm 2019 của Hiệu trưởng Trường Đại học Mỏ - Địa chất. Bộ phận có trụ sở tại Phòng 306 nhà C12 tầng, số 18, phố Viên, phường Đức Thắng, quận Bắc Từ Liêm, thành phố Hà Nội."
+            ]
+        },
+        {
+            "tag": "thoi_gian",
+            "patterns": [
+                "bo phan 1 cua humg thoi gian mo cua",
+                "bo phan 1 cua mo dia chat thoi gian mo cua",
+                "bo phan 1 cua Dai hoc Mo Dia Chat thoi gian mo cua",
+                "thong tin gio mo cua ve bo phan mot cua humg",
+                "gio mo cua bo phan mot cua dai hoc mo dia chat",
+                "gio mo cua bo phan mot cua mo dia chat",
+                "bo phan mot cua mo cua luc nao",
+                "gio giac cua bo phan mot cua"
+            ],
+            "responses": [
+                "Theo thông tin trên website của Trường Đại học Mỏ - Địa chất, giờ giấc làm việc của Bộ phận một cửa HUMG như sau:\n\tThứ 2, Thứ 3, Thứ 4, Thứ 5: Sáng từ 7h30 đến 11h30, Chiều từ 13h30 đến 17h30\n\tThứ 6: Sáng từ 7h30 đến 11h30, Chiều từ 13h30 đến 17h00\n\tThứ 7, Chủ nhật: Nghỉ\nBộ phận một cửa HUMG làm việc tất cả các ngày trong tuần, trừ ngày lễ, Tết theo quy định của Nhà nước.\nNgoài ra, Bộ phận một cửa HUMG còn có dịch vụ tiếp nhận hồ sơ và trả kết quả qua đường bưu điện hoặc qua email. Các tổ chức, cá nhân có nhu cầu sử dụng dịch vụ này vui lòng liên hệ với Bộ phận một cửa HUMG để được hướng dẫn."
+            ]
+        }
+    ]
+}

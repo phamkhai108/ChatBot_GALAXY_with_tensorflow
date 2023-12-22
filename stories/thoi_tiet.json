@@ -1,0 +1,50 @@
+{
+    "intents": [
+        {
+            "tag": "hom_qua",
+            "patterns": [
+                "thoi tiet hom qua the nao",
+                "thoi tiet ngay hom qua",
+                "thoi tiet hom truoc",
+                "troi hom qua",
+                "thoi tiet cua hom qua"
+            ],
+            "responses": [
+                "Hôm qua trời nhiều mây, không khí oi bức nhiệt độ trung bình là 29,5 độ C."
+            ]
+        },
+        {
+            "tag": "hom_nay",
+            "patterns": [
+                "thoi tiet hom nay the nao",
+                "thoi tiet",
+                "thoi tiet hien tai",
+                "troi hom nay the nao",
+                "thoi tiet ngay hom nay"
+            ],
+            "responses": [
+                "Hôm nay trời nắng nhẹ, nhiệt độ ấm khoảng 24 độ C, rất thích hợp để đi chơi"
+            ]
+        },
+        {
+            "tag": "ngay_mai",
+            "patterns": [
+                "toi muon biet thoi tiet ngay mai",
+                "thoi tiet ngay mai",
+                "vay con thoi tiet ngay mai",
+                "con thoi tiet ngay mai thi sao",
+                "ngay mai thi sao",
+                "thoi tiet hom sau thi sao",
+                "thoi tiet hom sau the nao",
+                "troi ngay mai",
+                "thoi tiet ngay sau"
+            ],
+            "responses": [
+                "Ngày mai trời có mưa giông, nhiệt độ xuống còn khoảng 17 độ C",
+                "Ngày mai trời có mưa giông, nhiệt độ xuống còn khoảng 17 độ C",
+                "Ngày mai trời có mưa lớn, nhiệt độ giảm xuống so với ngày hôm này là 7 độ C cụ thể là còn 17 độ. Nếu bạn có dự định đi chơi cho ngày mai thì nên cân nhắc vì thời tiết có thể làm cho bạn khó chịu sẽ ảnh hưởng đến tâm trạng của bạn."
+                
+            ]
+        }
+    ]
+}

@@ -16,7 +16,6 @@ class SimpleChatApp:
         # Tạo Entry widget để người dùng nhập vào
         self.input_entry = tk.Entry(master, width=40, font=('Arial', 14)) 
         self.input_entry.grid(row=1, column=0, pady=10, padx=10, sticky="ew")
-
         # Tạo nút "Send" để gửi tin nhắn
         self.send_button = tk.Button(master, text="Send", command=self.send_message)
         self.send_button.grid(row=1, column=1, pady=10, padx=10, sticky="ew")
@@ -75,6 +74,6 @@ class SimpleChatApp:
 root = tk.Tk()
 app = SimpleChatApp(root)
 
-# Đặt kích thước mặc định cho cửa sổ
+# Đặt kích thước mặc định cho cửa sổhe
 root.geometry("1000x600")
 root.mainloop()

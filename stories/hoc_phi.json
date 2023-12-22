@@ -1,0 +1,53 @@
+{
+    "intents": [
+        {
+            "tag": "hoc_phi",
+            "patterns": [
+                "hoc phi cua truong dai hoc mo dia chat la bao nhieu",
+                "toi muon biet hoc phi cua truong dai hoc mo dia chat la bao nhieu",
+                "hoc phi cua mo dia chat",
+                "hoc phi hien tai của dai hoc mo dia chat"
+            ],
+            "responses": [
+                "Theo tôi được biết học phí của trường Đại học Mỏ-Địa Chất được công bố như sau: \n-Khối kinh tế: 328.000 đồng/1TC (tín chỉ).\n-Khối kỹ thuật: 378.000 đồng/1TC (tín chỉ).\nVới mức học phí theo hệ tín chỉ này thì sinh viên kinh tế hoc tại trường trung bình một năm khoảng 12 triệu đồng. Sinh viên kỹ thuật trung bình một năm là 14 triệu đồng.\nBạn cần biết thêm thông tin gì nữa không."
+            ]
+        },
+        {
+            "tag": "hoi_tin_chi_hoc_phi",
+            "patterns": [
+                "trung binh bao nhieu tin chi mot nam",
+                "mot nam bao nhieu tin",
+                "mot nam bao nhieu tc",
+                "vay so tin chi trong mot nam la bao nhieu",
+                "mot nam hoc bao nhieu tin vay"
+            ],
+            "responses": [
+                "Với số tiền học phí đó thì một năm sinh viên của truòng học 40 tín chỉ, gồm 2 kì học chính là kì 1 và kì 2",
+                "Với số tiền học phí đó sinh viên có thể học 40 Tín cho một năm. Tương đương 20 tín cho 1 kì",
+                "Mỗi kì học khoảng 20 tín chỉ, một năm 40 tín."
+            ]
+        },
+        {
+            "tag": "hoi_khoi_luong_hoc_tap",
+            "patterns": [
+                "neu toi hoc 18 tin thi sao",
+                "hoc 18 tin mot ky thi hoc phi bao nhieu",
+                "hoc phi cho 18 tin chi mot ki"
+            ],
+            "responses": [
+                "Với 18 tín chỉ mỗi kỳ, học phí 1 năm của bạn khoảng hơn 11 triệu với khối kinh tế và hơn 13 triệu với khối kỹ thuật",
+                "Với khối lượng học tập đó của bạn sẽ rơi vào khoảng gần 6 triệu cho một kì học đối với khối kinh tế. Gần 7 triệu / 1 kỳ đối với khối kỹ thuật",
+                "Nếu bạn học 18 tín một kì thì học phí vào khoảng gần 6 triệu cho một kì học đối với khối kinh tế. Gần 7 triệu / 1 kỳ đối với khối kỹ thuật"
+            ]
+        },
+        {
+            "tag": "hoi_khoi_luong_hoc_tap",
+            "patterns": [
+
+            ],
+            "responses": [
+
+            ]
+        }
+    ]
+}

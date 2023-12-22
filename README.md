@@ -11,3 +11,6 @@ xử lý các từ viết tắt trong tiếng việt. vd: 'dz' = 'đẹp trai'
 - Tính năng bổ sung: + vá một số lỗi trong Chatbot
                      + Cập nhập giao diện dể dàng tương tác với người dùng
                      + Có thể cài trên laptop window bất kì để sử dụng mà không cài môi trường cũng như dùng mạng
+
+*****hướng dẫn sử dụng: tải project về và cài những thư viện cần thiết rồi chạy file giao_dien.py
+

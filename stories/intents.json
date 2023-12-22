@@ -1,28 +1,8 @@
 {
     "intents": [
         {
-            "tag": "chao_hoi",
-            "patterns": [
-                "xin chao",
-                "chao ban",
-                "chao toi",
-                "Hi",
-                "chao",
-                "hello"
-            ],
-            "responses": [
-                "Xin chào!",
-                "Chào bạn!",
-                "Rất vui được gặp bạn!",
-                "Bạn cần tôi giúp gì không!",
-                "Hello!",
-                "Hello! Bạn cần giúp gì?"
-            ]
-        },
-        {
             "tag": "tam_biet",
             "patterns": [
-
                 "bye",
                 "goodbye",
                 "tam biet",
@@ -86,48 +66,6 @@
             ]
         },
         {
-            "tag": "thoi_tiet_nay",
-            "patterns": [
-                "troi hom nay the nao",
-                "thoi tiet hom nay",
-                "thoi tiet nay",
-                "thoi tiet"
-            ],
-            "responses": [
-                "Xin lỗi, tôi không thể cung cấp thông tin về thời tiết.",
-                "Rất tiếc, nhưng tôi không thể cung cấp thông tin về thời tiết cụ thể vì không có khả năng truy cập vào dữ liệu thời tiết thực tế. Để biết thông tin về thời tiết, bạn có thể sử dụng các dịch vụ trực tuyến như trang web thời tiết hoặc ứng dụng di động, hoặc bạn cũng có thể kiểm tra với các nguồn tin tức địa phương."
-            ]
-        },
-        {
-            "tag": "thoi_tiet_mai",
-            "patterns": [
-                "troi ngay mai the nao",
-                "thoi tiet ngay mai",
-                "ngay mai troi the nao",
-                "thoi tiet hom sau"
-            ],
-            "responses": [
-                "Ngày mai trời nắng ấm, gió nhẹ, rất thích hợp để bạn đi dạo hoặc đi hẹn hò",
-                "Ngày mai không khí trong lành, trời ít mấy có gió nhẹ và nhiệt độ trung bình. Về đêm sẽ hơi se lạnh. Nếu bạn đi chơi về muộn hãy nhớ mang theo chiếc áo khoác nhẹ nhé!"
-            ]
-        },
-        {
-            "tag": "tom_tat",
-            "patterns": [
-                "giup toi tom tat",
-                "toi can tom tat",
-                "toi can tom tat van ban",
-                "tom tat",
-                "tom tat van ban cho toi",
-                "ban co the tom tat van ban nay khong"
-            ],
-            "responses": [
-                "Bạn cần tóm tắt văn bản phải không? Hãy đưa nó vào đây.",
-                "Hãy nêu văn bản của bạn vào đây.",
-                "Nhập văn bản của bạn, tôi sẽ giúp bạn tóm tắt."
-            ]
-        },
-        {
             "tag": "help",
             "patterns": [
                 "troi hom",
@@ -167,17 +105,6 @@
             "responses": [
                 "sau đây là đoạn mã tính tổng 2 số nguyên bằng python\nso1 = int(input('Nhập số nguyên thứ nhất: '))\nso2 = int(input('Nhập số nguyên thứ hai: '))\ntong = so1 + so2\nprint(f'Tổng của {so1} và {so2} là: {tong}')",
                 "sau đây là đoạn mã tính tổng 2 số nguyên bằng python\n\tso1 = int(input('Nhập số nguyên A: '))\n\tso2 = int(input('Nhập số nguyên B: '))\n\ttong = so1 + so2\n\tprint(f'Tổng của {so1} và {so2} là: {tong}')"
-            ]
-        },
-        {
-            "tag": "khong_hieu",
-            "patterns": [
-                
-            ],
-            "responses": [
-                "Tôi không hiểu! Bạn có thể nói rõ hơn không.",
-                "Xin lỗi! Tôi chỉ là một chatbot đơn giản, thông tin bạn muốn cố thể tôi chưa được cập nhật.",
-                "Tôi không thể trả lời yêu cầu của bạn, hãy đặt câu hỏi hoặc yêu cầu khác tôi sẽ giúp bạn."
             ]
         }
     ]
