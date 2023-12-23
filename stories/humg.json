@@ -1,0 +1,33 @@
+{
+    "intents": [
+        {
+            "tag": "humg",
+            "patterns": [
+                "dai hoc mo dia chat",
+                "dai hoc humg",
+                "truong dai hoc mo dia chat",
+                "truong dai hoc humg",
+                "truong dai hoc humg ha noi"
+            ],
+            "responses": [
+                "Bạn cần tóm tắt văn bản phải không? Hãy đưa nó vào đây.",
+                "Hãy nêu văn bản của bạn vào đây.",
+                "Nhập văn bản của bạn, tôi sẽ giúp bạn tóm tắt."
+            ]
+        },
+        {
+            "tag": "tom_tat_sau",
+            "patterns": [
+                "ban da tom tat chua vay",
+                "van ban tom tat day u",
+                "tom tat chua",
+                "tom tat van ban toi da nhap di"
+            ],
+            "responses": [
+                "Tôi đã tóm tắt văn bản bạn đưa ra, bạn có thể lướt lại để xem",
+                "Văn bản tôi đã tóm tắt phía trên rồi! Nếu cần thêm thông tin gì hãy liên hệ với tôi",
+                "Văn bản của bạn đã được tóm tắt."
+            ]
+        }
+    ]
+}

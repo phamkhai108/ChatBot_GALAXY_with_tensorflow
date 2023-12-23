@@ -1,0 +1,6 @@
+numpy == 1.23.5
+nltk == 3.8.1
+Unidecode == 1.3.7
+tensorflow == 2.12.0
+underthesea == 1.3.3
+scikit-learn == 1.2.0
