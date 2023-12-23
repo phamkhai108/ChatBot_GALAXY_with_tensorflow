@@ -76,10 +76,10 @@ def chat(user_input):
         if tg['tag'] == tag:
             responses = tg['responses']
     if tag == "tom_tat":
-        bot_response = random.choice(responses)        
+        bot_response = random.choice(responses)
         waiting_for_summary = True
         return bot_response
-    #kiểm tra chỉ só dự đoán bé hơn 50% thì in ra 
+    #kiểm tra chỉ só dự đoán bé hơn 70% thì in ra 
     elif results[0, results_index] < 0.7: 
         for tg in data["intents"]:
             if tg['tag'] == "khong_hieu":

@@ -12,9 +12,9 @@ xử lý các từ viết tắt trong tiếng việt. vd: 'dz' = 'đẹp trai'
                      + Cập nhập giao diện dể dàng tương tác với người dùng
                      + Có thể cài trên laptop window bất kì để sử dụng mà không cài môi trường cũng như dùng mạng
 
-*****hướng dẫn sử dụng: tải project về và cài những thư viện cần thiết rồi chạy file giao_dien.py
-
 * ChatBot "GALAXY" version 2.1 ra mắt (22/12/2023)
 - Tính năng bổ sung: + vá một số lỗi trong Chatbot
                      + thêm dữ liệu cho đoạn chat
                      + Tổ chức lại file dữ liệu của bot vào thư mục "stories"
+
+*****hướng dẫn sử dụng: tải project về và cài những thư viện cần thiết rồi chạy file giao_dien.py
