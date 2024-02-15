@@ -9,7 +9,6 @@ from model import create_model
 from data_preparation import prepare_data, file_names_list
 from tom_tat import tom_tat_van_ban
 from acronym.stand_words import normalize_text, dictions
-from tes import loai_bo_dau_cau 
 
 # Khởi tạo stemmer
 stemmer = LancasterStemmer()
@@ -72,7 +71,6 @@ def chat(user_input):
         return summary
 
     inp = user_input.lower()
-    inp = loai_bo_dau_cau(inp)
     inp = normalize_text(inp, dictions)
     inp = unidecode.unidecode(inp)
     results = model.predict(np.array([bag_of_words(inp, words)]))
