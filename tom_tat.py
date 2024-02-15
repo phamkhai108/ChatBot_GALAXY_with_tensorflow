@@ -33,7 +33,7 @@ def tom_tat_van_ban(content):
         X.append(sentence_vec)
 
     # Tính số cụm cho K-means
-    n_clusters = int(num_sent // 4)
+    n_clusters = int(num_sent * (35/100))
     if n_clusters >= (num_sent - 1):
         return 'Văn bản quá ngắn! nhập văn bản dài hơn tôi sẽ tóm tắt giúp bạn'
     else:

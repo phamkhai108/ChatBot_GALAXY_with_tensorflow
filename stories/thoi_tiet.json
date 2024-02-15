@@ -3,11 +3,11 @@
         {
             "tag": "hom_qua",
             "patterns": [
-                "thoi tiet hom qua the nao",
-                "thoi tiet ngay hom qua",
-                "thoi tiet hom truoc",
-                "troi hom qua",
-                "thoi tiet cua hom qua"
+                "thời tiết hôm qua thế nào ",
+                "thời tiết ngày hôm qua",
+                "thời tiết hôm trước",
+                "trời hôm qua",
+                "thời tiết của hôm qua"
             ],
             "responses": [
                 "Hôm qua trời nhiều mây, không khí oi bức nhiệt độ trung bình là 29,5 độ C."
@@ -16,11 +16,11 @@
         {
             "tag": "hom_nay",
             "patterns": [
-                "thoi tiet hom nay the nao",
-                "thoi tiet",
-                "thoi tiet hien tai",
-                "troi hom nay the nao",
-                "thoi tiet ngay hom nay"
+                "Thời tiết hôm nay thế nào?",
+                "Thời tiết?",
+                "Thời tiết hiện tại.",
+                "Trời hôm nay thế nào?",
+                "Thời tiết ngày hôm nay."
             ],
             "responses": [
                 "Hôm nay trời nắng nhẹ, nhiệt độ ấm khoảng 24 độ C, rất thích hợp để đi chơi"
