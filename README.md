@@ -18,3 +18,4 @@ xử lý các từ viết tắt trong tiếng việt. vd: 'dz' = 'đẹp trai'
                      + Tổ chức lại file dữ liệu của bot vào thư mục "stories"
 
 *****hướng dẫn sử dụng: tải project về và cài những thư viện cần thiết rồi chạy file giao_dien.py
+-gggg

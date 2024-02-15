@@ -26,7 +26,7 @@ def create_model():
         model.load_weights("model.h5")
     except:
         # Nếu file model.tflearn không tồn tại, huấn luyện mô hình với dữ liệu training và output
-        model.fit(training, output, epochs=2000, batch_size=8)
+        model.fit(training, output, epochs=1500, batch_size=8)
         # Lưu trọng số của mô hình vào file model.tflearn
         model.save_weights("model.h5")
     
