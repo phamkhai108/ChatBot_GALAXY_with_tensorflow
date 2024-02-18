@@ -22,4 +22,4 @@ xử lý các từ viết tắt trong tiếng việt. vd: 'dz' = 'đẹp trai'
                      + thêm dữ liệu cho đoạn chat
                      + Cập nhật chatbot dùng trên web
 
-*****hướng dẫn sử dụng: tải project về và cài những thư viện cần thiết rồi chạy file giao_dien.py để dùng trên giao diện winform hoặc chạy file app.py để dùng trên giao diện web
+*****hướng dẫn sử dụng: tải project về và cài những thư viện cần thiết trong file 'requirements.txt' bằng câu lệnh 'pip install -r requirements.txt' rồi chạy file giao_dien.py để dùng trên giao diện winform hoặc chạy file app.py để dùng trên giao diện web
