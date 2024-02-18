@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Chatbot</title>
+    <title>Chatbot 'GALAXY'</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,16 +32,16 @@
             background-color: #fff;
         }
         #textInput {
-            width: 65%;
+            width: 90%;
             height: 50px;
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
         #buttonInput {
-            width: 30%;
-            height: 50px;
-            margin-left: 5%;
+            width: 10%;
+            height: 70px;
+            margin-left: 1%;
             background-color: #4caf50;
             color: white;
             border: none;
@@ -54,22 +54,22 @@
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">Chatbot</h1>
+    <h1 style="text-align: center;">Chatbot 'GALAXY'</h1>
     <div id="chatbox"></div>
     <div id="userInput">
-        <input id="textInput" type="text" name="msg" placeholder="Nhập tin nhắn của bạn tại đây...">
-        <input id="buttonInput" type="submit" value="Gửi" onclick="getBotResponse()">
+        <input id="textInput" type="text" name="msg" placeholder="Message GALAXY...">
+        <input id="buttonInput" type="submit" value="Submit" onclick="getBotResponse()">
     </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     function getBotResponse() {
         var rawText = $("#textInput").val();
-        var userHtml = '<p class="userText"><span>Bạn: ' + rawText + '</span></p>';
+        var userHtml = '<p class="userText"><span>YOU: ' + rawText + '</span></p>';
         $("#textInput").val("");
         $("#chatbox").append(userHtml);
         document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
         $.get("/get", { msg: rawText }).done(function(data) {
-            var botHtml = '<p class="botText"><span>Bot: ' + data + '</span></p>';
+            var botHtml = '<p class="botText"><span>GALAXY: ' + data + '</span></p>';
             $("#chatbox").append(botHtml);
             document.getElementById('userInput').scrollIntoView({block: 'start', behavior: 'smooth'});
         });

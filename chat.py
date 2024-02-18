@@ -68,7 +68,7 @@ def chat(user_input):
         # thực hiện tóm tắt 
         summary = tom_tat_van_ban(user_input)
         waiting_for_summary = False
-        return summary
+        return 'Văn bản sau khi tóm tắt: ' + summary
 
     inp = user_input.lower()
     inp = normalize_text(inp, dictions)
@@ -86,7 +86,7 @@ def chat(user_input):
         waiting_for_summary = True
         return bot_response
 
-    # kiểm tra chỉ số dự đoán bé hơn 70% thì in ra 
+    # kiểm tra chỉ số dự đoán bé hơn 95% thì in ra 
     elif results[0, results_index] < 0.95: 
         for tg in data["intents"]:
             if tg['tag'] == "khong_hieu":
