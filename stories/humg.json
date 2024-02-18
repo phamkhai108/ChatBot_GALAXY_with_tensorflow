@@ -10,23 +10,9 @@
                 "truong dai hoc humg ha noi"
             ],
             "responses": [
-                "Bạn cần tóm tắt văn bản phải không? Hãy đưa nó vào đây.",
-                "Hãy nêu văn bản của bạn vào đây.",
+                "Trường Đại học Mỏ - Địa chất (HUMG) là một trường đại học quốc gia đa ngành, trọng điểm về khoa học tự nhiên và công nghệ, đóng vai trò nòng cốt trong lĩnh vực đào tạo, nghiên cứu khoa học và chuyển giao công nghệ về khoa học Trái đất, tài nguyên khoáng sản, năng lượng, môi trường và xây dựng.",
+                "HUMG là một trường đại học uy tín và chất lượng, được xếp hạng trong top 1000 trường đại học hàng đầu thế giới theo xếp hạng QS World University Rankings 2023. Trường cũng là trường đại học Việt Nam duy nhất được lọt vào top 500 trường đại học hàng đầu thế giới về lĩnh vực Khoa học Trái đất và Khoa học Đại dương theo xếp hạng QS World University Rankings by Subject 2023. HUMG có đội ngũ giảng viên giàu kinh nghiệm và chuyên môn cao, trong đó có 108 Giáo sư, 234 Phó Giáo sư và hơn 1.200 Tiến sĩ. Trường cũng có mối quan hệ hợp tác với nhiều trường đại học và tổ chức nghiên cứu hàng đầu thế giới, tạo điều kiện cho sinh viên được học tập và nghiên cứu trong môi trường quốc tế.",
                 "Nhập văn bản của bạn, tôi sẽ giúp bạn tóm tắt."
-            ]
-        },
-        {
-            "tag": "tom_tat_sau",
-            "patterns": [
-                "ban da tom tat chua vay",
-                "van ban tom tat day u",
-                "tom tat chua",
-                "tom tat van ban toi da nhap di"
-            ],
-            "responses": [
-                "Tôi đã tóm tắt văn bản bạn đưa ra, bạn có thể lướt lại để xem",
-                "Văn bản tôi đã tóm tắt phía trên rồi! Nếu cần thêm thông tin gì hãy liên hệ với tôi",
-                "Văn bản của bạn đã được tóm tắt."
             ]
         }
     ]

@@ -68,30 +68,16 @@
         {
             "tag": "help",
             "patterns": [
-                "troi hom",
-                "nay the nao",
-                "muon",
-                "can",
-                "toi can",
-                "toi muon",
+                "toi muon hoi",
+                "toi can giai dap",
+                "toi can ban giup",
+                "toi muon giup",
                 "giup toi"
             ],
             "responses": [
                 "Bạn cần giúp gì?",
                 "Tôi giúp gì được cho bạn?",
                 "Bạn có điều gì cần tôi giúp"
-            ]
-        },
-        {
-            "tag": "phan_loai_cau",
-            "patterns": [
-                "phan loai van ban",
-                "phan loai cau"
-            ],
-            "responses": [
-                "n",
-                "a",
-                "v"
             ]
         },
         {

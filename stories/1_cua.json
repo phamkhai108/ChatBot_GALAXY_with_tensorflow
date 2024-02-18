@@ -1,7 +1,7 @@
 {
     "intents": [
         {
-            "tag": "thong_tin_chung",
+            "tag": "thong_tin_1_cua",
             "patterns": [
                 "bo phan 1 cua humg",
                 "bo phan 1 cua mo dia chat",
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "tag": "thoi_gian",
+            "tag": "thoi_gian_1_cua",
             "patterns": [
                 "bo phan 1 cua humg thoi gian mo cua",
                 "bo phan 1 cua mo dia chat thoi gian mo cua",

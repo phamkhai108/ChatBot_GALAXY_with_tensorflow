@@ -16,8 +16,8 @@
         {
             "tag": "khong_hieu_1",
             "patterns": [
-                "ban noi khong hieu ma duoc a",
-                "ngu",
+                "ban that su khong hieu hay co tinh khong hieu",
+                "co that la khong hieu khong",
                 "toi da noi rat ro roi"
             ],
             "responses": [

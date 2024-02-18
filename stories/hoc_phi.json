@@ -39,15 +39,6 @@
                 "Với khối lượng học tập đó của bạn sẽ rơi vào khoảng gần 6 triệu cho một kì học đối với khối kinh tế. Gần 7 triệu / 1 kỳ đối với khối kỹ thuật",
                 "Nếu bạn học 18 tín một kì thì học phí vào khoảng gần 6 triệu cho một kì học đối với khối kinh tế. Gần 7 triệu / 1 kỳ đối với khối kỹ thuật"
             ]
-        },
-        {
-            "tag": "hoi_khoi_luong_hoc_tap",
-            "patterns": [
-
-            ],
-            "responses": [
-
-            ]
         }
     ]
 }
